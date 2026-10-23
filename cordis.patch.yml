@@ -1,0 +1,14 @@
+# dsh-fish-memory 的 bundle patch。
+#
+# 本插件没有声明 Config（不出现在「设置」页），配置写在这里的 config 下。
+- insert:
+    - id: fish-memory
+      name: dsh-fish-memory
+      config:
+        enabled: true
+        halfLifeMinutes: 25
+        defaultTtlMinutes: 90
+        maxEntries: 200
+        promptLimit: 5
+        promptOrder: 9070
+        promptMaxChars: 900
