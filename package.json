@@ -1,0 +1,36 @@
+{
+  "name": "dsh-fish-memory",
+  "version": "0.1.0",
+  "description": "A goldfish memory for DeepSeek Harness agents: notes decay by half-life, expire by TTL, and only the heaviest few ride in the system prompt.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./memory": "./lib/memory.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "memory",
+    "forgetting"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
