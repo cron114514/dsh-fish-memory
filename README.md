@@ -20,7 +20,7 @@
 ## 安装
 
 ```powershell
-git clone https://github.com/<you>/dsh-fish-memory "$env:USERPROFILE\.dsh\plugins\dsh-fish-memory"
+git clone https://github.com/cron114514/dsh-fish-memory "$env:USERPROFILE\.dsh\plugins\dsh-fish-memory"
 cd "$env:USERPROFILE\.dsh\profiles\desktop"
 # package.json：dependencies 加 "dsh-fish-memory": "link:../../plugins/dsh-fish-memory"
 #              dsh.profile.bundles 加 "dsh-fish-memory"
